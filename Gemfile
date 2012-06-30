@@ -20,6 +20,7 @@ gem 'jquery-rails'
 gem 'haml'
 group :development do
   gem 'haml-rails'
+  gem 'growl'
 end
 
 gem "rspec-rails", :group => [:test, :development]
