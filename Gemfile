@@ -20,8 +20,13 @@ gem 'jquery-rails'
 gem 'haml'
 group :development do
   gem 'haml-rails'
-  gem 'rspec'
-  gem 'rspec-rails'
+end
+
+gem "rspec-rails", :group => [:test, :development]
+group :test do
+  gem "factory_girl_rails"
+  gem "capybara"
+  gem "guard-rspec"
 end
 
 # Deploy with Capistrano
